@@ -1,8 +1,12 @@
 import React from 'react'
 
-const IdeaExplorer = () => {
+interface IdeaExplorerProps {
+
+}
+
+const IdeaExplorer = ({}: IdeaExplorerProps) => {
   return (
-    <div>
+    <div className='min-h-screen'>
       Idea Explorer
     </div>
   )
