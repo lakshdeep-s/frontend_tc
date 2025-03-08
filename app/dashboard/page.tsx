@@ -41,6 +41,28 @@ const DashboardPage = ({} : DashboardPageProps) => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <Card className="hover:shadow-lg transition-all">
                 <CardHeader>
+                  <Brain className="h-10 w-10 text-primary mb-2" />
+                  <CardTitle>Literature Review</CardTitle>
+                  <CardDescription>
+                    Conduct systematic literature reviews
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">
+                    Perform in-depth literature reviews with AI assistance, synthesizing findings from multiple sources efficiently.
+                  </p>
+                </CardContent>
+                <CardFooter>
+                  <Button className="w-full" asChild>
+                    <Link href="/dashboard/idea-analyzer">
+                      Start Review
+                    </Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+
+              <Card className="hover:shadow-lg transition-all">
+                <CardHeader>
                   <Lightbulb className="h-10 w-10 text-primary mb-2" />
                   <CardTitle>Idea Explorer</CardTitle>
                   <CardDescription>
